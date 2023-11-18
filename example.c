@@ -3,15 +3,16 @@
 #define N 3
 #define M 4
 
-void process(int n, int m, int matrix [M][N], int *result)
+void process(int n, int m, int matrix[M][N], int *result)
 {
     for (int i = 0; i < m; ++i) {
         result[i] = 0;
         for (int j = 0; j < n; ++j) {
-            result[i] += matrix[i][j];
+            if (matrix[i][j] < 0) {
+                result[i] += matrix[i][j];
+            }
         }
     }
-
 }
 
 int main(int argc, char** argv)

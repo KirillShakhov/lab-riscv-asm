@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 #define N 3
-#define M 4
+#define M 2
 
 void process(int n, int m, int matrix[M][N], int *result)
 {

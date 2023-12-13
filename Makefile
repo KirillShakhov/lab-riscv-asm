@@ -1,7 +1,7 @@
 .PHONY: clean
 
-dump_name=example.dump
-executable_name=example.elf
+dump_name=lab1.dump
+executable_name=lab1.elf
 
 default: $(dump_name) $(executable_name)
 
